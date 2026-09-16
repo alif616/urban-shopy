@@ -1,0 +1,20 @@
+{
+  "name": "urban-shopy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Urban Shopy - Full-Stack MERN E-commerce Platform. Style for Everyday Life.",
+  "scripts": {
+    "client": "npm run dev --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client && npm run build --prefix server",
+    "install:all": "npm install && npm install --prefix client && npm install --prefix server",
+    "seed": "npm run seed --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
