@@ -1,4 +1,4 @@
-﻿# Dependencies
+# Dependencies
 node_modules/
 */node_modules/
 
@@ -8,7 +8,7 @@ build/
 */dist/
 */build/
 
-# Environment variables — CRITICAL: never commit these
+# Environment variables � CRITICAL: never commit these
 .env
 .env.local
 .env.development
@@ -48,3 +48,8 @@ coverage/
 .env.development.local
 .env.test.local
 .env.production.local
+
+# TypeScript configs are required by the repo
+!tsconfig.json
+!**/tsconfig.json
+!**/tsconfig.*.json
