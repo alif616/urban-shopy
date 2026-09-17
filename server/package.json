@@ -6,10 +6,10 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "build": "tsc",
+    "build": "tsc src/server.ts --outDir dist --rootDir src --target ES2020 --module commonjs --lib ES2020 --esModuleInterop --skipLibCheck --resolveJsonModule --allowSyntheticDefaultImports --forceConsistentCasingInFileNames --sourceMap",
     "start": "node dist/server.js",
     "seed": "ts-node-dev --transpile-only src/seed/seed.ts",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit src/server.ts --target ES2020 --module commonjs --skipLibCheck --esModuleInterop --resolveJsonModule --allowSyntheticDefaultImports"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
